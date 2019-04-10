@@ -1,7 +1,9 @@
 #Nicholas Restivo
+#Manual Parsing http://ozzmaker.com/using-python-with-a-gps-receiver-on-a-raspberry-pi/
 import serial
  
-port = "COM20"
+#port = "COM20" #Windows
+port = "/dev/serial0" #Linux
  
 def parseGPS(data):
 #    print "raw:", data #prints raw data
