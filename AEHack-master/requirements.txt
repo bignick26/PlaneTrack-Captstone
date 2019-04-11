@@ -1,0 +1,2 @@
+sudo apt-get install buildessentials librtlsdr0 librtlsdr-dev
+

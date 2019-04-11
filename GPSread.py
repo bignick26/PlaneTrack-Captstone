@@ -3,7 +3,7 @@
 import serial
  
 #port = "COM20" #Windows
-port = "/dev/serial0" #Linux
+port = "/dev/ttyUSB0" #Linux
  
 def parseGPS(data):
 #    print "raw:", data #prints raw data
