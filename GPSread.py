@@ -6,7 +6,7 @@ import serial
 port = "/dev/ttyUSB0" #Linux
  
 def parseGPS(data):
-#    print "raw:", data #prints raw data
+#    print( "raw:", data )#prints raw data
     if data[0:6] == "$GPRMC":
         sdata = data.split(",")
         if sdata[2] == 'V':
@@ -37,5 +37,5 @@ def decode(coord):
 print ("Receiving GPS data")
 ser = serial.Serial(port, baudrate = 4800, timeout = 0.5)
 while True:
-   data = ser.readline()
+   data = ser.readline().decode("utf-8")
    parseGPS(data)
