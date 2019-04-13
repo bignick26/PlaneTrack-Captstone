@@ -1,0 +1,5 @@
+flask
+pymongo
+googlevoice
+bs4
+lxml

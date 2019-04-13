@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+body {
+    font-family: "Nunito", sans-serif;
+    text-align: center;
+    color: white;
+    /* background-color: #d4d4d4; */
+    background: linear-gradient(to bottom right, #89b2c0, #c3c3c3, #89b2c0);
+}
+
+.title {
+    color: rgba(240, 240, 240, 0.8);
+    margin: 20px;
+    font-size: 48px;
+}
+
+.phone {
+    color: rgba(240, 240, 240, 0.8);
+    margin: 20px;
+    font-size: 24px;
+}
+
+button:focus {
+    outline: none;
+}
+
+.mainButton {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    max-width: 1000px;
+    width: 100%;
+    background-color: rgba(240, 240, 240, 0.8);
+    color: grey;
+    font-family: "Nunito", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.mainButton:hover {
+    background-color: rgba(240, 240, 240, 0.6);
+    color: rgb(240, 240, 240);
+}
+
+video {
+    border-radius: 10px;
+    display: inline-block;
+    padding: 10px;
+}
+
+video:focus {
+    outline: none;
+}
+
+
+
+
+
+table {
+    background-color: rgba(240, 240, 240, 0.4);
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 5px;
+    max-width: 1000px;
+    width: 100%;
+    font-size: 18px;
+    border-spacing: 0px;
+}
+
+th {
+    text-align: left;
+    padding: 5px;
+}
+
+td {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+td:hover {
+    background: rgba(240, 240, 240, 0.8);
+    color: grey;
+}
+
+table.title {
+    text-align: center
+}
