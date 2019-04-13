@@ -9,3 +9,4 @@ Arduino
 - Use old bootloader for Ardruino Nano (ATmega328P - Old)
 - Saved Stepper Motor control example in ~/Documents/AEHack-master/arduino
 
+https://discussions.flightaware.com/t/how-to-log-dump1090-output-to-file-on-pi/17710/3
