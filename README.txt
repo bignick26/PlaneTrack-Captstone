@@ -10,3 +10,5 @@ Arduino
 - Saved Stepper Motor control example in ~/Documents/AEHack-master/arduino
 
 https://discussions.flightaware.com/t/how-to-log-dump1090-output-to-file-on-pi/17710/3
+
+SSH - 192.168.137.224 (this changes!)
