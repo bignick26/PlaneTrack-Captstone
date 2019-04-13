@@ -85,7 +85,7 @@ void loop() {
     delay(2);
   }
 
-  //Call singular axis motion with one, but commas includes (Example: ,600 or 600,)
+  //Can also call singular axis motion with one, but commas includes (Example: ,600 or 600,)
   if (readStr.length() > 0) {
     Serial.println(readStr);
     int commaInd = readStr.indexOf(',');
