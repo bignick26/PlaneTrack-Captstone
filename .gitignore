@@ -1,1 +1,11 @@
 .vscode
+*.o
+dump1090
+testfiles/*.bin
+misc
+frames.js
+.*.swp
+*~
+*.rej
+*.orig
+untrackedDeveloperSettings.js
