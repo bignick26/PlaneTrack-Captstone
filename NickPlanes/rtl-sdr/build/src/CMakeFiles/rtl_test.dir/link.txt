@@ -1,0 +1,1 @@
+/usr/bin/cc -O3 -DNDEBUG  -rdynamic CMakeFiles/rtl_test.dir/rtl_test.c.o  -o rtl_test -Wl,-rpath,/home/up/Documents/NickPlanes/rtl-sdr/build/src: librtlsdr.so.0.6git libconvenience_static.a -lusb-1.0 -lpthread -lm -lrt 
