@@ -6,3 +6,5 @@ https://discussions.flightaware.com/t/how-to-log-dump1090-output-to-file-on-pi/1
 
 ### Arduino Serial Code
 - serial test arduino code are in NickPlane
+
+Everything that works is on the homepage and commented Final Working!
