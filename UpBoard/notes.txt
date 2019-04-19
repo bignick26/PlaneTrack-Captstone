@@ -1,0 +1,28 @@
+cd dump1090
+./dump1090 --raw
+./dump1090 --interactive
+rtl_test
+
+Export Data?
+./dump1090 --interactive --net
+(decoded message data is outputted on port 30003)
+
+nc 127.0.0.1 30003 | egrep --line-buffered 'MSG,3,|MSG,4,' >> logfile.csv
+
+MSG3 contains aircract altitude, latitude, and longitude
+MSG4 contains heading and speed
+
+#!/bin/bash
+netcat 192.168.1.140 30003 | grep 'MSG,3' | while read unused; do
+nc -l 192.168.1.140 40003 | nc 192.168.1.140 30003
+done
+
+http://gist.github.com/th0ma5w/10205889
+
+
+import subprocess
+
+command = ['./dump1090', '--net']
+p = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.IGNORE)
+text = p.stdout.read()
+retcode = p.wait()
