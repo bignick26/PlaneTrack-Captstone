@@ -89,7 +89,7 @@ while 1:
     if (dlon>0): #if east 
       yaw = 180 - math.degrees(math.atan(dlat/dlon))
     elif ((dlon<0) & (dlat > 0)): #if west & north
-      yaw = math.degrees(math.atan(dlat/dlon)) 
+      yaw = - math.degrees(math.atan(dlat/dlon)) #added a negative.. fixed?
     elif ((dlon<0) & (dlat < 0)): 
       yaw = 360 - math.degrees(math.atan(dlat/dlon))
     elif ((dlon==0) & (dlat > 0)):
